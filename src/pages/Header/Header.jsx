@@ -7,9 +7,6 @@ const Header = () => {
 
     return (
         <div>
-            <div className="bg-[#091022cf] py-3">
-                <button>SIGN IN</button>
-            </div>
             <div className="bg-black py-2">
                 <div className="navbar max-w-[1400px] m-auto grid grid-cols-3">
                     <div className="flex items-center">
@@ -33,6 +30,7 @@ const Header = () => {
                                 ))
                             }
                         </ul>
+                        <button>SIGN IN</button>
                     </div>
                 </div>
             </div>

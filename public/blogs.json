@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co/b5RG0Ss/Health.png",
+      "title": "Clean water for children",
+      "price": 290.00,
+      "desc": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential."
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co/6gngRNQ/Education.png",
+      "title": "Good education",
+      "price": 190.00,
+      "desc": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential."
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co/2F7nvjN/Clothing.png",
+      "title": "Used Clothing Drive",
+      "price": 490.00,
+      "desc": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential."
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co/9WFvhkP/Food.png",
+      "title": "Better Food for Everyone",
+      "price": 390.00,
+      "desc": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential."
+    },
+    {
+      "id": 5,
+      "cover": "https://i.ibb.co/9WFvhkP/Food.png",
+      "title": "Feeding Hope Together",
+      "price": 590.00,
+      "desc": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential."
+    },
+    {
+      "id": 6,
+      "cover": "https://i.ibb.co/2F7nvjN/Clothing.png",
+      "title": "Share the Warmth",
+      "price": 250.00,
+      "desc": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential."
+    }
+  ]
+  
