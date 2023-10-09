@@ -8,10 +8,7 @@ import img6 from '../../assets/F.png';
 const Slider = () => {
     return (
         <div>
-            <div className="bg-white py-10">
-                <h2 className="text-[200px] font-semibold text-center text-[#e2012e41] font-oswald">PARTNERS</h2>
-            </div>
-            <div className="bg-[#E2012D] flex -mt-36">
+            <div className="bg-[#E2012D] flex">
                 <div className="max-w-[1400px] p-20 mx-auto">
                     <div className="carousel rounded-box space-x-28">
                         <div className="carousel-item">
