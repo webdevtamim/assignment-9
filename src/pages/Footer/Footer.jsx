@@ -15,7 +15,7 @@ const Footer = () => {
                     <div className="max-w-md mx-auto">
                         <form className="flex justify-center items-center">
                             <input className="h-10 outline-none bg-white text-[#373a3c] px-4 py-2 w-full" type="email" name="" placeholder="Email" />
-                            <input className="bg-[#E2012D] font-medium font-oswald h-10 py-2 px-12 text-white tracking-widest rounded-tr-full hover:text-[#091022] cursor-pointer" type="submit" value="SEND" />
+                            <input className="bg-[#E2012D] font-medium font-oswald h-10 py-2 px-12 text-white tracking-widest rounded-tr-full hover:text-[#091022] cursor-pointer" type="submit" value="SUBSCRIBE" />
                         </form>
                     </div>
                 </div>
