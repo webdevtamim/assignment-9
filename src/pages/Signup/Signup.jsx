@@ -1,14 +1,29 @@
-// import { createUserWithEmailAndPassword } from "firebase/auth";
-// import auth from "../../firebase/firebase.config";
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext } from 'react';
 import { AuthContext } from '../../Providers/AuthProvider';
+import { FaGoogle } from 'react-icons/fa';
+import auth from "../../firebase/firebase.config";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const Signup = () => {
-    const {createUser} = useContext(AuthContext);
+    const provider = new GoogleAuthProvider();
+
+    const handleGoogleSignUp = () => {
+        signInWithPopup(auth, provider)
+            .then(result => {
+                console.log(result.user);
+                toast("User login successfully");
+                navigate(location?.state ? location.state : '/');
+            })
+            .catch(error => {
+                console.error(error);
+            })
+    }
+
+    const { createUser } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -18,16 +33,13 @@ const Signup = () => {
         e.preventDefault();
         const form = new FormData(e.currentTarget);
 
-        // const name = form.get('name');
-        // const photo = form.get('photo');
         const email = form.get('email');
         const password = form.get('password');
-        // console.log(name, photo, email, password);
 
         setRegisterError('');
 
         createUser(email, password)
-        .then(result => {
+            .then(result => {
                 console.log(result.user);
                 toast("User created successfully");
                 navigate(location?.state ? location.state : '/');
@@ -68,6 +80,14 @@ const Signup = () => {
                         registerError && <p className="text-red-600 pt-4">{registerError}</p>
                     }
                     <p className="text-white pt-4">All ready have an account? <Link to={'/signin'}><span className="hover:underline underline-offset-4 font-bold">sign in</span></Link></p>
+                    <div className="flex justify-center pt-10">
+                        <button
+                            onClick={handleGoogleSignUp}
+                            className='text-xl font-oswald font-medium flex items-center gap-2 text-white border rounded-md py-3 px-6 hover:text-[#091022] hover:bg-white active:text-[#E2012D] active:border-[#E2012D] active:bg-transparent'>
+                            <span>Register with : </span>
+                            <FaGoogle className='inline'></FaGoogle>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className="pt-20">

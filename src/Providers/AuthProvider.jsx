@@ -13,7 +13,6 @@ const AuthProvider = ({children}) => {
     const createUser = (email, password) =>{
         setLoading(true);
         if (password.length < 6) {
-            console.log('tamim');
             toast("The password is less than 6 characters");
             return;
         }
@@ -40,7 +39,6 @@ const AuthProvider = ({children}) => {
 
     useEffect( () =>{
         const unSubscribe = onAuthStateChanged(auth, currentuser =>{
-            console.log('user in the auth state changed', currentuser);
             setUser(currentuser);
             setLoading(false);
         });

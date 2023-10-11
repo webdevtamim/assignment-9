@@ -1,12 +1,27 @@
-import { signInWithEmailAndPassword } from "firebase/auth";
-import auth from "../../firebase/firebase.config";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { FaGoogle } from 'react-icons/fa';
+import auth from "../../firebase/firebase.config";
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 
 const Signin = () => {
+    const provider = new GoogleAuthProvider();
+
+    const handleGoogleSignin = () => {
+        signInWithPopup(auth, provider)
+            .then(result => {
+                console.log(result.user);
+                toast("User login successfully");
+                navigate(location?.state ? location.state : '/');
+            })
+            .catch(error => {
+                console.error(error);
+            })
+    }
+
     const { logIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
@@ -59,6 +74,12 @@ const Signin = () => {
                         signinError && <p className="text-red-700 pt-4">{signinError}</p>
                     }
                     <p className="text-white pt-4">New to this website? Please <Link to={'/signup'}><span className="hover:underline underline-offset-4 font-bold">sign up</span></Link></p>
+                    <div className="flex justify-center pt-10">
+                        <button onClick={handleGoogleSignin} className='text-xl font-oswald font-medium flex items-center gap-2 text-white border rounded-md py-3 px-6 hover:text-[#091022] hover:bg-white active:text-[#E2012D] active:border-[#E2012D] active:bg-transparent'>
+                            <span>Signin with : </span>
+                            <FaGoogle className='inline'></FaGoogle>
+                            </button>
+                    </div>
                 </div>
             </div>
             <div className="pt-20">
