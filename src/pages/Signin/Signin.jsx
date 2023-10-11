@@ -78,7 +78,7 @@ const Signin = () => {
                         <button onClick={handleGoogleSignin} className='text-xl font-oswald font-medium flex items-center gap-2 text-white border rounded-md py-3 px-6 hover:text-[#091022] hover:bg-white active:text-[#E2012D] active:border-[#E2012D] active:bg-transparent'>
                             <span>Signin with : </span>
                             <FaGoogle className='inline'></FaGoogle>
-                            </button>
+                        </button>
                     </div>
                 </div>
             </div>

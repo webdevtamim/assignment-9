@@ -22,9 +22,9 @@ const Contact = () => {
                     <p className="text-base text-white tracking-widest">Riverside Building, County Hall, Bishop’s, London SE1 7PB, United Kingdom</p>
                 </div>
                 <div className='flex max-w-[80%] mx-auto mb-16 mt-5'>
-                    <FaFacebookMessenger className='min-h-[20px] min-w-[25px]' />
-                    <FaTwitter className='min-h-[25px] min-w-[20px] mx-3' />
-                    <FaEnvelope className='min-h-[25px] min-w-[20px]' />
+                    <FaFacebookMessenger className='min-h-[20px] min-w-[25px] cursor-pointer' />
+                    <FaTwitter className='min-h-[25px] min-w-[20px] mx-3 cursor-pointer' />
+                    <FaEnvelope className='min-h-[25px] min-w-[20px] cursor-pointer' />
                 </div>
                 <div className="p-10 border max-w-[80%] mx-auto">
                     <form onSubmit={handlecontact}>

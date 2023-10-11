@@ -6,11 +6,11 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export const AuthContext = createContext(null);
 
-const AuthProvider = ({children}) => {
+const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    const createUser = (email, password) =>{
+    const createUser = (email, password) => {
         setLoading(true);
         if (password.length < 6) {
             toast("The password is less than 6 characters");
@@ -27,18 +27,18 @@ const AuthProvider = ({children}) => {
         return createUserWithEmailAndPassword(auth, email, password);
     }
 
-    const logIn = (email, password) =>{
+    const logIn = (email, password) => {
         setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
     }
 
-    const logOut = () =>{
+    const logOut = () => {
         setLoading(true);
         return signOut(auth);
     }
 
-    useEffect( () =>{
-        const unSubscribe = onAuthStateChanged(auth, currentuser =>{
+    useEffect(() => {
+        const unSubscribe = onAuthStateChanged(auth, currentuser => {
             setUser(currentuser);
             setLoading(false);
         });

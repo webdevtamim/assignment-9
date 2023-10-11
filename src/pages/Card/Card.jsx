@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
-const Card = ({card}) => {
-    const {id, cover, title, price, desc} = card;
+const Card = ({ card }) => {
+    const { id, cover, title, price, desc } = card;
     return (
         <div className='card card-compact hover:shadow text-white'>
             <img className="w-full" src={cover} alt="Card Image" />

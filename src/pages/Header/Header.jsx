@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <div>
-            <div className="bg-black py-2">
+            <div className="bg-black py-2 px-5">
                 <div className="navbar max-w-[1400px] m-auto grid grid-cols-3">
                     <div className="flex items-center">
                         <img className="w-11 h-10" src="logo.png" alt="Logo" />
@@ -47,8 +47,8 @@ const Header = () => {
                                     <div tabIndex={0} className="w-10 mb-2 cursor-pointer">
                                         {
                                             user.photoURL ?
-                                            <img className='rounded-full' src={user.photoURL} /> :
-                                            <img className='rounded-full' src="avatar.png" />
+                                                <img className='rounded-full' src={user.photoURL} /> :
+                                                <img className='rounded-full' src="avatar.png" />
                                         }
                                     </div>
                                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-3 shadow bg-white rounded-lg text-right font-semibold space-y-1">

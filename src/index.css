@@ -18,3 +18,7 @@ body {
     color: #E2012D;
     background-color: #000;
 }
+
+.slide .legend{
+    opacity: 1 !important;
+}

@@ -1,14 +1,15 @@
-import Banner from "../Banner/Banner";
+import HomeBanner from "../HomeBanner/HomeBanner";
 import Cards from "../Cards/Cards";
-import Slider from "../Slider/Slider";
+import Video from "../Video/Video";
 import Foot from "../Foot/Foot";
+import { Carousel } from "react-responsive-carousel";
 
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
+            <HomeBanner></HomeBanner>
             <Cards></Cards>
-            <Slider></Slider>
+            <Video></Video>
             <Foot></Foot>
         </div>
     );
