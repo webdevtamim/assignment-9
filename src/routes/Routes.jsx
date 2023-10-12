@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../layouts/Root";
+import Error from "../pages/Error/Error";
 import Home from "../pages/Home/Home";
 import Partner from "../pages/Partner/Partner";
 import Contact from "../pages/Contact/Contact";
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',
@@ -19,11 +21,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/partner',
-                element: <Partner></Partner>,
+                element: <PrivateRoute><Partner></Partner></PrivateRoute>,
             },
             {
                 path: '/contact',
-                element: <Contact></Contact>,
+                element: <PrivateRoute><Contact></Contact></PrivateRoute>,
             },
             {
                 path: '/:id',

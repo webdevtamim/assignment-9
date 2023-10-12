@@ -52,7 +52,8 @@ const Header = () => {
                                         }
                                     </div>
                                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-3 shadow bg-white rounded-lg text-right font-semibold space-y-1">
-                                        <li className='text-[#091022]'>{user.email}</li>
+                                        <li className='text-[#091022] text-center'>{user.displayName}</li>
+                                        <li className='text-[#091022] pb-1 text-center'>{user.email}</li>
                                         <li><button className='bg-[#E2012D] text-white text-xs hover:text-white hover:bg-[#091022] w-full active:scale-90 justify-center' onClick={handleSignOut}>SIGN OUT</button></li>
                                     </ul>
                                 </div> :
