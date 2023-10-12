@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 
 const Card = ({ card }) => {
-    const { id, cover, title, price, desc } = card;
+    const { id, cover, title, price, desc1 } = card;
     return (
-        <div className='card card-compact hover:shadow text-white'>
+        <div className='card card-compact hover:shadow text-white relative'>
             <img className="w-full" src={cover} alt="Card Image" />
-            <div className='card-body bg-[#02010166] -mt-72'>
-                <span className='py-1 px-3 rounded font-medium'>${price}</span>
+            <div className='card-body bg-[#02010166] absolute bottom-0'>
+                <span className='py-1 rounded font-medium'>${price}</span>
                 <h2 className="card-title">{title}</h2>
-                <p>{desc}</p>
-                <Link to={`${id}`}><button className='py-2.5 px-5 bg-[#E2012D] rounded-tr-full'>Explore</button></Link>
+                <p className='pt-1 pb-4'>{desc1}</p>
+                <Link to={`${id}`}><button className='py-2.5 pl-12 pr-20 bg-[#E2012D] rounded-tr-full hover:bg-white hover:text-[#091022]'>Explore</button></Link>
             </div>
         </div>
     );

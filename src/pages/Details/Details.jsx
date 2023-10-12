@@ -5,8 +5,7 @@ const Details = () => {
     const { id } = useParams();
     const idInt = parseInt(id);
     const cardDetails = cardsDetails.find(details => details.id == idInt);
-    const { cover, price, title, desc } = cardDetails;
-    console.log(cover, price, title, desc);
+    const { cover, price, title, desc1, desc2, desc3, desc4, desc5 } = cardDetails;
 
     return (
         <div className="bg-white">
@@ -16,7 +15,7 @@ const Details = () => {
                 </figure>
                 <div className="px-0">
                     <h2 className="md:text-4xl text-2xl font-bold text-[#0B0B0B] md:pt-14 pt-10 pb-6">{title}</h2>
-                    <p className="text-[#0b0b0bcc] leading-7 font-medium md:text-lg">{desc}</p>
+                    <p className="text-[#0b0b0bcc] leading-7 font-medium md:text-lg">{desc1} <br /><br /> {desc2}{desc3} <br /><br /> {desc4}{desc5}</p>
                 </div>
             </div>
         </div>

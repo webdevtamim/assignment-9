@@ -4,41 +4,65 @@
     "cover": "https://i.ibb.co/3h5hzC5/i.jpg",
     "title": "Gaming Tournaments",
     "price": 290.00,
-    "desc": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential."
+    "desc1": "Discover the rich history and culture of this charming old town, filled with cobblestone streets and quaint cafes.",
+    "desc2": "Our accommodations have been meticulously designed to ensure your stay is nothing less than perfect. Every detail has been considered, from the elegant furnishings to the breathtaking ocean views. Whether you choose a beachfront villa or a treetop suite, you'll find yourself in a world of luxury and comfort.",
+    "desc3": "The adventures that await you are as diverse as the natural surroundings. Dive into crystal-clear waters to explore vibrant coral reefs teeming with marine life. Snorkeling and scuba diving are just a few of the water-based activities you can enjoy. And when it comes to dining, our renowned chefs have crafted a menu that's a celebration of global flavors. From savory appetizers to delectable desserts, each dish is a work of art that will tantalize your taste buds.",
+    "desc4": "But it's not just the cuisine that will leave you feeling rejuvenated. Our world-class spa is a sanctuary dedicated to your well-being. Our expert therapists are skilled in the art of relaxation, offering massages and therapies that will transport you to a state of pure bliss. Surrounded by nature's beauty, you'll find the serenity and rejuvenation you seek, allowing you to emerge refreshed and ready to embrace life's adventures.",
+    "desc5": "For the adventurous souls, our resort is a gateway to thrilling outdoor activities. Whether it's zip-lining through the lush canopy, white-water rafting on untamed rivers, or hiking to awe-inspiring peaks, there's no shortage of excitement. The thrill of the outdoors is waiting for those ready to take on the challenge."
   },
   {
     "id": 2,
     "cover": "https://i.ibb.co/kKWZ9Sq/Header-6.jpg",
     "title": "Virtual Reality Experience",
     "price": 190.00,
-    "desc": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential."
+    "desc1": "Indulge in the flavors of our world-class cuisine, offering a delectable array of dishes from around the globe.",
+    "desc2": "But it's not just the cuisine that will leave you feeling rejuvenated. Our world-class spa is a sanctuary dedicated to your well-being. Our expert therapists are skilled in the art of relaxation, offering massages and therapies that will transport you to a state of pure bliss. Surrounded by nature's beauty, you'll find the serenity and rejuvenation you seek, allowing you to emerge refreshed and ready to embrace life's adventures.",
+    "desc3": "For the adventurous souls, our resort is a gateway to thrilling outdoor activities. Whether it's zip-lining through the lush canopy, white-water rafting on untamed rivers, or hiking to awe-inspiring peaks, there's no shortage of excitement. The thrill of the outdoors is waiting for those ready to take on the challenge.",
+    "desc4": "And if your idea of an escape involves a deeper connection with nature, our eco-lodges are a haven of serenity. Awaken to the songs of tropical birds, explore diverse ecosystems on guided nature walks, and discover the enchanting wildlife that calls our sanctuary home. This is where you can unplug, unwind, and find serenity in the heart of the wilderness.",
+    "desc5": "When the sun sets, the city's nightlife comes to life in a whirlwind of music, dance, and entertainment. Our nightlife scene is as diverse as it is electrifying. Enjoy jazz performances, sway to salsa beats, and revel in the atmosphere of lively nightclubs. The night belongs to the city, and we invite you to join the celebration."
   },
   {
     "id": 3,
     "cover": "https://i.ibb.co/h1RBn2f/Header-3.jpg",
     "title": "Retro Gaming zone",
     "price": 490.00,
-    "desc": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential."
+    "desc1": "Create lasting memories with your family. Our resort offers a plethora of activities for kids and adults alike.",
+    "desc2": "And if your idea of an escape involves a deeper connection with nature, our eco-lodges are a haven of serenity. Awaken to the songs of tropical birds, explore diverse ecosystems on guided nature walks, and discover the enchanting wildlife that calls our sanctuary home. This is where you can unplug, unwind, and find serenity in the heart of the wilderness.",
+    "desc3": "When the sun sets, the city's nightlife comes to life in a whirlwind of music, dance, and entertainment. Our nightlife scene is as diverse as it is electrifying. Enjoy jazz performances, sway to salsa beats, and revel in the atmosphere of lively nightclubs. The night belongs to the city, and we invite you to join the celebration.",
+    "desc4": "For the history enthusiasts, our destination is a treasure trove of ancient ruins, majestic temples, and architectural wonders. Walk in the footsteps of ancient civilizations, explore the intricacies of sacred sites, and feel the weight of history as you wander through awe-inspiring landscapes. Each monument, each relic, tells a story that transcends time.",
+    "desc5": "Sunsets on the beach are moments of sheer magic. Sip cocktails by the shore as the sun dips beneath the horizon, painting the sky in a symphony of colors. The gentle ocean breeze and the sound of waves create an ambiance of sheer romance and tranquility. It's an experience that etches itself into your memory forever."
   },
   {
     "id": 4,
     "cover": "https://i.ibb.co/wwtVKtQ/anotherbanner.jpg",
     "title": "Exhibation Booths",
     "price": 390.00,
-    "desc": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential."
+    "desc1": "Adventurers, get ready for thrilling outdoor activities, from hiking in the mountains to zip-lining through the forest.",
+    "desc2": "For the history enthusiasts, our destination is a treasure trove of ancient ruins, majestic temples, and architectural wonders. Walk in the footsteps of ancient civilizations, explore the intricacies of sacred sites, and feel the weight of history as you wander through awe-inspiring landscapes. Each monument, each relic, tells a story that transcends time.",
+    "desc3": "Sunsets on the beach are moments of sheer magic. Sip cocktails by the shore as the sun dips beneath the horizon, painting the sky in a symphony of colors. The gentle ocean breeze and the sound of waves create an ambiance of sheer romance and tranquility. It's an experience that etches itself into your memory forever.",
+    "desc4": "Nestled on the tranquil shores of a secluded tropical paradise, our resort offers an unparalleled escape from the hustle and bustle of everyday life. Surrounded by lush rainforests that cascade down to meet the pristine sandy beaches, this is a place where natural beauty and serenity combine to create a truly magical experience.",
+    "desc5": "Our accommodations have been meticulously designed to ensure your stay is nothing less than perfect. Every detail has been considered, from the elegant furnishings to the breathtaking ocean views. Whether you choose a beachfront villa or a treetop suite, you'll find yourself in a world of luxury and comfort."
   },
   {
     "id": 5,
     "cover": "https://i.ibb.co/9vs3yTV/Header-1.jpg",
     "title": "Live Game Streaming Areana",
     "price": 590.00,
-    "desc": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential."
+    "desc1": "Shop till you drop in the city's bustling markets and boutiques. Find unique souvenirs, fashionable exquisite cherish.",
+    "desc2": "Nestled on the tranquil shores of a secluded tropical paradise, our resort offers an unparalleled escape from the hustle and bustle of everyday life. Surrounded by lush rainforests that cascade down to meet the pristine sandy beaches, this is a place where natural beauty and serenity combine to create a truly magical experience.",
+    "desc3": "Our accommodations have been meticulously designed to ensure your stay is nothing less than perfect. Every detail has been considered, from the elegant furnishings to the breathtaking ocean views. Whether you choose a beachfront villa or a treetop suite, you'll find yourself in a world of luxury and comfort.",
+    "desc4": "The adventures that await you are as diverse as the natural surroundings. Dive into crystal-clear waters to explore vibrant coral reefs teeming with marine life. Snorkeling and scuba diving are just a few of the water-based activities you can enjoy. And when it comes to dining, our renowned chefs have crafted a menu that's a celebration of global flavors. From savory appetizers to delectable desserts, each dish is a work of art that will tantalize your taste buds.",
+    "desc5": "But it's not just the cuisine that will leave you feeling rejuvenated. Our world-class spa is a sanctuary dedicated to your well-being. Our expert therapists are skilled in the art of relaxation, offering massages and therapies that will transport you to a state of pure bliss. Surrounded by nature's beauty, you'll find the serenity and rejuvenation you seek, allowing you to emerge refreshed and ready to embrace life's adventures."
   },
   {
     "id": 6,
     "cover": "https://i.ibb.co/GvxZn2m/Header-2.jpg",
     "title": "CHOOSE YOUR GEAR",
     "price": 250.00,
-    "desc": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential."
+    "desc1": "Experience the vibrant nightlife of the city, with live music, dancing, and a myriad of entertainment options.",
+    "desc2": "Our accommodations have been meticulously designed to ensure your stay is nothing less than perfect. Every detail has been considered, from the elegant furnishings to the breathtaking ocean views. Whether you choose a beachfront villa or a treetop suite, you'll find yourself in a world of luxury and comfort.",
+    "desc3": "But it's not just the cuisine that will leave you feeling rejuvenated. Our world-class spa is a sanctuary dedicated to your well-being. Our expert therapists are skilled in the art of relaxation, offering massages and therapies that will transport you to a state of pure bliss. Surrounded by nature's beauty, you'll find the serenity and rejuvenation you seek, allowing you to emerge refreshed and ready to embrace life's adventures.",
+    "desc4": "And if your idea of an escape involves a deeper connection with nature, our eco-lodges are a haven of serenity. Awaken to the songs of tropical birds, explore diverse ecosystems on guided nature walks, and discover the enchanting wildlife that calls our sanctuary home. This is where you can unplug, unwind, and find serenity in the heart of the wilderness.",
+    "desc5": "For the history enthusiasts, our destination is a treasure trove of ancient ruins, majestic temples, and architectural wonders. Walk in the footsteps of ancient civilizations, explore the intricacies of sacred sites, and feel the weight of history as you wander through awe-inspiring landscapes. Each monument, each relic, tells a story that transcends time."
   }
 ]
