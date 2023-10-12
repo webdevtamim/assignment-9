@@ -1,8 +1,19 @@
-# React + Vite
+# Event Management
+Website live site link: [#](#)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Application Features
 
-Currently, two official plugins are available:
+1. **Interactive Cards Display:**
+   - The application showcases interactive cards on the homepage, providing information about services. Users can click on these cards to learn more about each service.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. **Detailed Service Pages:**
+   - Users can access detailed information about each service by clicking on the service cards. The service pages display service descriptions, pricing, and other details.
+
+3. **User Authentication:**
+   - The application supports user authentication with email and password. Users can create new accounts and sign in securely.
+
+4. **Google Sign-In:**
+   - For a seamless sign-in experience, users can choose to sign in with their Google accounts. The application leverages Firebase's Google sign-in functionality.
+
+5. **Partner and Membership Sections:**
+   - The application includes sections for showcasing partners and membership information. Users can explore partner details, and there's a call-to-action to join the membership.
