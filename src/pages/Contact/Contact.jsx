@@ -7,26 +7,26 @@ const Contact = () => {
 
     const handlecontact = e => {
         e.preventDefault();
-        toast("User created successfully");
+        toast("Send successfully");
     }
 
     return (
         <div>
-            <div className="max-w-[1400px] mx-auto">
-                <div className="bg-[url('sign-bg.png')] bg-contain pt-20 bg-no-repeat bg-right-top space-y-4 max-w-[80%] mx-auto">
+            <div className="max-w-[1400px] mx-auto px-5">
+                <div className="bg-[url('sign-bg.png')] pt-20 bg-no-repeat bg-right-top space-y-4 lg:max-w-[80%] bg-[length:120px_100px] mx-auto">
                     <p className="text-lg text-white tracking-widest">CONTACT</p>
-                    <div className="space-x-5">
-                        <span className="text-[#E2012D] text-5xl font-semibold font-oswald">VICTORY</span>
-                        <span className="text-white text-5xl font-semibold font-oswald">CONTACT</span>
+                    <div className="lg:space-x-5">
+                        <span className="text-[#E2012D] lg:text-5xl text-4xl font-semibold font-oswald">VICTORY</span>
+                        <span className="text-white lg:text-5xl text-4xl font-semibold font-oswald">CONTACT</span>
                     </div>
-                    <p className="text-base text-white tracking-widest">Riverside Building, County Hall, Bishop’s, London SE1 7PB, United Kingdom</p>
+                    <p className="text-base text-white tracking-widest max-w-[90%]">Riverside Building, County Hall, Bishop’s, London SE1 7PB, United Kingdom</p>
                 </div>
-                <div className='flex max-w-[80%] mx-auto mb-16 mt-5'>
+                <div className='flex lg:max-w-[80%] mx-auto mb-16 mt-5'>
                     <FaFacebookMessenger className='min-h-[20px] min-w-[25px] cursor-pointer' />
                     <FaTwitter className='min-h-[25px] min-w-[20px] mx-3 cursor-pointer' />
                     <FaEnvelope className='min-h-[25px] min-w-[20px] cursor-pointer' />
                 </div>
-                <div className="p-10 border max-w-[80%] mx-auto">
+                <div className="p-10 border lg:max-w-[80%] mx-auto">
                     <form onSubmit={handlecontact}>
                         <label className="text-white font-oswald text-xs font-semibold tracking-widest" htmlFor="textField">Name</label><br />
                         <input className="mt-2 mb-6 w-full bg-white rounded border outline-none font-oswald font-semibold border-[#7A7A7A] text tracking-widest text-xs py-3 px-4" type="text" name="name" id="textField" placeholder="Name" />

@@ -2,10 +2,10 @@ import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
+import { FaAlignRight } from 'react-icons/fa';
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
-    console.log(user);
 
     const handleSignOut = () => {
         logOut()
@@ -25,8 +25,8 @@ const Header = () => {
                         <span className="text-[#E2012D] text-4xl font-semibold font-oswald pl-3 pr-2">VICTORY.</span>
                         <span className="text-white text-4xl font-semibold font-oswald">GG</span>
                     </div>
-                    <div className='col-span-2 flex justify-end'>
-                        <ul className="menu menu-horizontal space-x-0">
+                    <div className='col-span-2 flex justify-end relative'>
+                        <ul className="menu menu-horizontal space-x-0 md:flex hidden">
                             {
                                 listItems.map((listItem, index) => (
                                     <li key={index}>
@@ -41,6 +41,26 @@ const Header = () => {
                                 ))
                             }
                         </ul>
+                        <div className="dropdown md:hidden">
+                            <label tabIndex={0} className="m-1 btn bg-transparent border-none hover:bg-transparent">
+                                <FaAlignRight className='min-h-[20px] min-w-[25px] cursor-pointer text-white' />
+                            </label>
+                            <ul tabIndex={0} className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box">
+                                {
+                                    listItems.map((listItem, index) => (
+                                        <li key={index}>
+                                            <NavLink
+                                                className='text-base text-white hover:text-[#E2012D] hover:bg-black focus-color font-medium uppercase'
+                                                id='focusColor'
+                                                to={listLinks[index]}
+                                            >
+                                                {listItem}
+                                            </NavLink>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
                         {
                             user ?
                                 <div className="dropdown dropdown-bottom dropdown-end bg-black">

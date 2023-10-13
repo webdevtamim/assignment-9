@@ -1,4 +1,12 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Footer = () => {
+
+    const handlesubscribe = e => {
+        e.preventDefault();
+        toast("Thanks for subscribe");
+    }
 
     return (
         <div>
@@ -13,9 +21,9 @@ const Footer = () => {
                         <p className="text-white max-w-[370px] mx-auto text-center">Riverside Building, County Hall, Bishop’s, London SE1 7PB, United Kingdom</p>
                     </div>
                     <div className="max-w-md mx-auto">
-                        <form className="flex justify-center items-center">
-                            <input className="h-10 outline-none bg-white text-[#373a3c] px-4 py-2 w-full" type="email" name="" placeholder="Email" />
-                            <input className="bg-[#E2012D] font-medium font-oswald h-10 py-2 px-12 text-white tracking-widest rounded-tr-full hover:text-[#091022] cursor-pointer" type="submit" value="SUBSCRIBE" />
+                        <form onSubmit={handlesubscribe} className="flex justify-center items-center">
+                            <input className="h-10 outline-none bg-white text-[#373a3c] px-4 py-2 w-full" type="email" name="" placeholder="Email" required />
+                            <input className="bg-[#E2012D] font-medium font-oswald h-10 py-2 sm:px-12 pr-7 pl-5 text-white tracking-widest rounded-tr-full hover:text-[#091022] cursor-pointer" type="submit" value="SUBSCRIBE" />
                         </form>
                     </div>
                 </div>
@@ -23,6 +31,7 @@ const Footer = () => {
             <div className="bg-[#E2012D] pt-5 pb-3">
                 <p className="text-xs font-medium text-white font-oswald text-center tracking-widest">COPYRIGHT VICTORY.GG ALL RIGHT RESERVED</p>
             </div>
+            <ToastContainer />
         </div>
     );
 };

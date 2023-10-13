@@ -52,15 +52,15 @@ const Signup = () => {
 
     return (
         <div className="border-b-4 border-[#E2012D]">
-            <div className="max-w-[1400px] mx-auto">
-                <div className="bg-[url('sign-bg.png')] bg-contain pt-20 pb-2 mb-16 bg-no-repeat bg-right-top space-y-4 max-w-[70%] mx-auto">
+            <div className="max-w-[1400px] mx-auto px-5 md:px-0">
+                <div className="bg-[url('sign-bg.png')] bg-[length:120px_100px] md:bg-contain pt-20 pb-2 mb-16 bg-no-repeat bg-right-top space-y-4 md:max-w-[70%] mx-auto">
                     <p className="text-base text-white tracking-widest">Please sign up</p>
                     <div className="space-x-5">
-                        <span className="text-[#E2012D] text-5xl font-semibold font-oswald">VICTORY</span>
-                        <span className="text-white text-5xl font-semibold font-oswald">SIGN UP</span>
+                        <span className="text-[#E2012D] md:text-5xl text-4xl font-semibold font-oswald">VICTORY</span>
+                        <span className="text-white md:text-5xl text-4xl font-semibold font-oswald">SIGN UP</span>
                     </div>
                 </div>
-                <div className="p-10 border max-w-[70%] mx-auto">
+                <div className="p-10 border md:max-w-[70%] mx-auto">
                     <form onSubmit={handleSignup}>
                         <label className="text-white font-oswald text-xs font-semibold tracking-widest" htmlFor="textField">Name</label><br />
                         <input className="mt-2 mb-6 w-full bg-white rounded border outline-none font-oswald font-semibold border-[#7A7A7A] text tracking-widest text-xs py-3 px-4" type="text" name="name" id="textField" placeholder="Name" />
@@ -79,7 +79,11 @@ const Signup = () => {
                     {
                         registerError && <p className="text-red-600 pt-4">{registerError}</p>
                     }
-                    <p className="text-white pt-4">All ready have an account? <Link to={'/signin'}><span className="hover:underline underline-offset-4 font-bold">sign in</span></Link></p>
+                    <div className='flex'>
+                        <div className='border-b-2  w-[45%]'></div>
+                        <p className="text-white text-center w-[10%] -mb-2  pt-5">OR</p>
+                        <div className='border-b-2  w-[45%]'></div>
+                    </div>
                     <div className="flex justify-center pt-10">
                         <button
                             onClick={handleGoogleSignUp}
@@ -88,6 +92,7 @@ const Signup = () => {
                             <FaGoogle className='inline'></FaGoogle>
                         </button>
                     </div>
+                    <p className="text-white pt-4">All ready have an account? <Link to={'/signin'}><span className="hover:underline underline-offset-4 font-bold">sign in</span></Link></p>
                 </div>
             </div>
             <div className="pt-20">
