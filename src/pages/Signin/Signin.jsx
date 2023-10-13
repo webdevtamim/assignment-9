@@ -25,17 +25,13 @@ const Signin = () => {
     const { logIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
-    const [signinError, setSignError] = useState([]);
 
     const handleSignin = e => {
         e.preventDefault();
-        console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
         const email = form.get('email');
         const password = form.get('password');
-        console.log(email, password);
 
-        setSignError('');
 
         logIn(email, password)
             .then(result => {
@@ -45,7 +41,13 @@ const Signin = () => {
             })
             .catch(error => {
                 console.error(error);
-                setSignError(error.message);
+                if (error.code === 'auth/wrong-password') {
+                    toast.error("Password doesn't match");
+                } else if (error.code === 'auth/user-not-found') {
+                    toast.error("Email doesn't match");
+                } else {
+                    toast.error("An error occurred. Please try again later.");
+                }
             })
     }
 
@@ -70,9 +72,6 @@ const Signin = () => {
                         <br />
                         <input className="w-full bg-[#E2012D] font-oswald font-semibold tracking-widest text-xs py-3 text-white rounded-tr-full rounded-l-lg hover:bg-white hover:text-[#091022] active:scale-x-90 duration-100" type="submit" value="Sign In" />
                     </form>
-                    {
-                        signinError && <p className="text-red-700 pt-4">{signinError}</p>
-                    }
                     <div className='flex'>
                         <div className='border-b-2  w-[45%]'></div>
                         <p className="text-white text-center w-[10%] -mb-2  pt-5">OR</p>
