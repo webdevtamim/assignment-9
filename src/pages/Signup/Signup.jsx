@@ -35,14 +35,23 @@ const Signup = () => {
 
         const email = form.get('email');
         const password = form.get('password');
+        const displayName = form.get('displayName');
+        const photoURL = form.get('photoURL');
+        console.log(displayName, email, password, photoURL);
 
         setRegisterError('');
 
-        createUser(email, password)
+        createUser(email, password, displayName, photoURL)
             .then(result => {
                 console.log(result.user);
                 toast("User created successfully");
-                navigate(location?.state ? location.state : '/');
+                navigate(location?.state ? location.state : {
+                    pathname: '/',
+                    state: {
+                        displayName: displayName,
+                        photoURL: photoURL,
+                    }
+                });
             })
             .catch(error => {
                 console.error(error);
@@ -62,11 +71,11 @@ const Signup = () => {
                 </div>
                 <div className="p-10 border md:max-w-[70%] mx-auto">
                     <form onSubmit={handleSignup}>
-                        <label className="text-white font-oswald text-xs font-semibold tracking-widest" htmlFor="textField">Name</label><br />
-                        <input className="mt-2 mb-6 w-full bg-white rounded border outline-none font-oswald font-semibold border-[#7A7A7A] text tracking-widest text-xs py-3 px-4" type="text" name="name" id="textField" placeholder="Name" />
+                        <label className="text-white font-oswald text-xs font-semibold tracking-widest" htmlFor="displayName">Name</label><br />
+                        <input className="mt-2 mb-6 w-full bg-white rounded border outline-none font-oswald font-semibold border-[#7A7A7A] text tracking-widest text-xs py-3 px-4" type="text" name="displayName" id="displayName" placeholder="Name" />
                         <br />
-                        <label className="text-white font-oswald text-xs font-semibold tracking-widest" htmlFor="photoField">Photo Link</label><br />
-                        <input className="mt-2 mb-6 w-full bg-white rounded border outline-none font-oswald font-semibold border-[#7A7A7A] text tracking-widest text-xs py-3 px-4" type="text" name="photo" id="photoField" placeholder="Photo link" />
+                        <label className="text-white font-oswald text-xs font-semibold tracking-widest" htmlFor="photoURL">Photo Link</label><br />
+                        <input className="mt-2 mb-6 w-full bg-white rounded border outline-none font-oswald font-semibold border-[#7A7A7A] text tracking-widest text-xs py-3 px-4" type="text" name="photoURL" id="photoURL" placeholder="Photo link" />
                         <br />
                         <label className="text-white font-oswald text-xs font-semibold tracking-widest" htmlFor="emailField">Email</label><br />
                         <input className="mt-2 mb-6 w-full bg-white rounded border outline-none font-oswald font-semibold border-[#7A7A7A] text tracking-widest text-xs py-3 px-4" type="email" name="email" id="emailField" placeholder="Email" required />

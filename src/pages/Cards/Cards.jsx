@@ -12,7 +12,7 @@ const Cards = () => {
 
     return (
         <div className="bg-white pt-32">
-            <div className="space-x-5 text-center">
+            <div data-aos="fade-up" className="space-x-5 text-center">
                 <span className="uppercase text-[#E2012D] md:text-6xl text-5xl font-semibold font-oswald">Our</span>
                 <span className="uppercase text-[#091022] md:text-6xl text-5xl font-semibold font-oswald">Service</span>
             </div>

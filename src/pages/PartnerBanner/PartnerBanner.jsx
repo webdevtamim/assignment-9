@@ -1,6 +1,6 @@
 const PartnerBanner = () => {
     return (
-        <div className="bg-[url('anotherbanner.jpg')] bg-no-repeat bg-fixed bg-cover pt-36">
+        <div style={{backgroundImage: "url('anotherbanner.jpg')"}} className="bg-no-repeat bg-fixed bg-cover pt-36">
             <div className="px-5 mb-12 grid md:grid-cols-2 items-center max-w-[1400px] mx-auto">
                 <div className="space-y-6">
                     <h1 className="text-[#E2012D] font-semibold md:text-7xl text-5xl font-oswald uppercase">OUR</h1>
